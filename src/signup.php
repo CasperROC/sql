@@ -54,8 +54,8 @@
 <span style="--i:32">\</span></h1>
 <div class="textbrick">
 <form action="aftersignup.php" method="post">
-Name: <input type="text" name="name"><br>
-Password: <input type="password" name="password"><br>
+Name: <input type="text" name="name" minlength="3" maxlength="15"><br>
+Password: <input type="password" name="password" minlength="5" maxlength="15"><br>
 <input id="verzenden" type="submit" value="submit">
 
 <a id="entrybutton" href="login.php" class="button">log in</a>

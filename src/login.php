@@ -32,7 +32,7 @@ if(isset($_SESSION["name"])){
 <form class="textbrick" action="homepage.php" method="post">
 Name: <input type="text" name="name" required><br>
 Password: <input type="password" name="password" required><br>
-<input type="submit">
+<input id="verzenden" type="submit" value="submit">
 
 <a id="entrybutton" href="signup.php" class="button">sign up</a>
 </body>

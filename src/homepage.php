@@ -50,7 +50,7 @@ $result = $stmt->get_result();
 if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         $hashed_password = $row["password"];
-}
+
 
 //controleert of ingevoerde pass zelfde is als pass uit database
 if (password_verify($pass, $hashed_password)){
@@ -58,6 +58,11 @@ echo "Welcome, " . $name;
 } else {
   echo "username or password incorrect";
   exit();
+}
+
+} else {
+    echo "username or password incorrect";
+    exit();
 }
 ?>
 
